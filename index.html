@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 	<title>桃園景點人潮警示燈號</title>
-	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/app.css?t=202102142150" />
 	<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
 </head>
 <body>
@@ -20,7 +20,7 @@
 			<img src="assets/images/banner-md.jpg" alt="" class="embed-responsive-item">
 		</picture>
 		<div class="maw-1280px p-2 p-md-3 py-xl-5 px-xl-0 mx-auto">
-			<div class="d-flex justify-content-between flex-wrap align-items-center mb-2 fz-18px fz-md-20px fz-lg-24px font-weight-bold">
+			<section class="d-flex justify-content-between flex-wrap align-items-center mb-2 fz-18px fz-md-20px fz-lg-24px font-weight-bold">
 	            <div class="d-flex align-items-center py-4px mr-1">
 	                <div class="d-flex align-items-center bg-gray text-success rounded p-4px px-sm-1 text-center mr-1">
 	                    <div class="w-4 w-sm-5 text-center" id="month"></div> /
@@ -34,11 +34,46 @@
 	                </div>
 	            </div>
 	            <div class="py-4px ml-md-auto text-gray-400 text-right fz-16px">(燈號每半小時更新一次)</div>  
-	        </div>
+	        </section>
 			<ul class="row mb-n2 mb-md-n3 mx-md-n12px" id="spot-light-list"></ul>
+			<section class="mt-4 mt-xl-5 p-2 p-xl-3 text-dark fz-16px border-left border-width-6px border-light-red rounded bg-light-red">
+                <p class="mb-2 text-danger">
+                    為提升觀光景區人潮分流宣導，燈號將每30分鐘變動一次，呈現該景區人潮狀況，提供民眾評估是否前往的參考依據。
+                </p>
+                <p class="fz-18px fz-md-20px fz-lg-20px font-weight-bold text-dark mb-2">
+                    景點人潮警示燈號顯示時間：08:00 - 17:00
+                </p>
+                <div class="mb-2">
+                    <div class="mb-1">景點人潮警示燈號說明如下：</div>
+                    <div class="position-relative pl-3 mb-1">
+                        <div class="w-2 h-2 flex-shrink-0 rounded-circle absolute-top-left bg-success" style="top:2px"></div>
+                        <div>顯示綠燈→人流安全值。最高值之50%以下。</div>
+                    </div>
+                    <div class="position-relative pl-3 mb-1">
+                        <div class="w-2 h-2 flex-shrink-0 rounded-circle absolute-top-left bg-warning" style="top:2px"></div>
+                        <div>顯示黃燈→人流警示值。最高值之50%∼60%。</div>
+                    </div>
+                    <div class="position-relative pl-3 mb-1">
+                        <div class="w-2 h-2 flex-shrink-0 rounded-circle absolute-top-left bg-danger" style="top:2px"></div>
+                        <div>顯示紅燈→人流管制值。最高值之60%以上。</div>
+                    </div>
+                    <div class="position-relative pl-3 mb-1">
+                        <div class="w-2 h-2 flex-shrink-0 rounded-circle absolute-top-left bg-gray-300" style="top:2px"></div>
+                        <div>顯示灰燈→離線狀態</div>
+                    </div>
+                </div>
+                <p class="mb-2">
+                    資料來源：中華電信大數據-即時遊客人數平台
+                </p>
+                <p>
+                    ★貼心小提醒★
+                    <br />
+                    防疫期間民眾應減少外出，如需外出，請配戴口罩、保持社交距離、以及避免至人潮擁擠處，全力落實自主管理，以降低群聚感染風險並提高旅遊安全。
+                </p>
+            </section>
 		</div>
 	</main>
 	<script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch%2CNodeList.prototype.forEach%2CObject.entries%2CURL%2CURLSearchParams" nomodule></script>
-	<script src="js/app.min.js?t=202102040937"></script>
+	<script src="js/app.min.js?t=202102142150"></script>
 </body>
 </html>
